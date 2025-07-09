@@ -24,11 +24,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       if (params['logoutSuccess'] === 'true') {
-        this.router.navigate(['/'], {
+        this.router.navigate(['/']/*, {
           state: {
             msgInfo: 'logoutSuccess'
           }
-        }).then(r => () => {});
+        }*/);
       }
     });
     this.router.events.subscribe((event) => {

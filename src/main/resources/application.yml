@@ -1,4 +1,9 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
   datasource:
     url: ${JDBC_DATABASE_URL:jdbc:h2:mem:bootifyexample}
     username: ${JDBC_DATABASE_USERNAME:sa}
